@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Savings Plan Generator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="title">Savings Plan Generator</h1>
+        
+        <!-- Currency Selection -->
+        <div class="currency-selector">
+            <label for="currency">Select Currency:</label>
+            <select id="currency">
+                <option value="INR">Rupee (INR)</option>
+                <option value="USD">Dollar (USD)</option>
+            </select>
+        </div>
+
+        <!-- Income Input -->
+        <div class="input-group animated-input">
+            <label for="income">Monthly Income:</label>
+            <input type="number" id="income" placeholder="Enter income amount" required>
+        </div>
+
+        <!-- Expenses Input -->
+        <div class="input-group animated-input">
+            <h2>Expenses</h2>
+            <label for="grocery">Grocery Amount:</label>
+            <input type="number" id="grocery" placeholder="Enter grocery amount">
+            
+            <label for="household-bills">Household Bills:</label>
+            <input type="number" id="electricity" placeholder="Electricity Bill">
+            <input type="number" id="water" placeholder="Water Bill">
+            <input type="number" id="rent" placeholder="House Rent (Optional)">
+            <input type="number" id="cleaning" placeholder="House Cleaning (Optional)">
+            
+            <label for="emi">EMI Amount:</label>
+            <input type="number" id="emi" placeholder="Enter EMI amount">
+
+            <label for="others">Others:</label>
+            <input type="checkbox" id="other-checkbox">
+            <input type="number" id="others" placeholder="Enter amount (Optional)" disabled>
+        </div>
+
+        <button onclick="generatePlan()">Generate Savings Plan</button>
+
+        <div id="result" class="result">
+            <!-- Results will be displayed here -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

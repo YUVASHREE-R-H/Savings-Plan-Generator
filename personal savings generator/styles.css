@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1.title {
+    text-align: center;
+    color: #fff;
+    background-color: #28a745;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: 'Cursive', sans-serif;
+    animation: bounce 1s infinite;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input[type="number"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.input-group input[type="number"]:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+.animated-input {
+    /* Animation applied only to the focus state, no zoom effect */
+}
+
+.currency-selector {
+    margin-bottom: 15px;
+}
+
+.currency-selector select {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.currency-selector select:focus {
+    border-color: #28a745;
+    box-shadow: 0 0 5px rgba(40, 167, 69, 0.5);
+    outline: none;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 20px;
+}
+
+.result h2 {
+    color: #333;
+}
+
+.result p {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.savings-plan, .excess-plan {
+    padding: 15px;
+    border-radius: 4px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.savings-plan {
+    background-color: #e0ffe0;
+}
+
+.excess-plan {
+    background-color: #ffe0e0;
+}
+
+.treasure-box {
+    background-color: #f0e4d7;
+    padding: 20px;
+    border-radius: 8px;
+    border: 2px solid #d4af37;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: shine 2s infinite;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% { transform: translateY(0); }
+    40% { transform: translateY(-30px); }
+    60% { transform: translateY(-15px); }
+}
+
+@keyframes shine {
+    0% { background-color: #f0e4d7; }
+    50% { background-color: #d4af37; }
+    100% { background-color: #f0e4d7; }
+}
